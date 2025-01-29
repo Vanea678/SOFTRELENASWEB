@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+body 
+{
+  background-image: url('idk2.jpg'); /* Замените на путь к вашему изображению */
+  background-repeat: no-repeat; /* Не повторять изображение */
+  background-size: cover; /* Растянуть изображение, чтобы оно покрыло весь фон */
+}
+
+.container {
+  display: flexbox;
+  justify-content: space-around;
+  width: 400px;
+  margin: 20px auto;
+  border: 2px solid #4CAF50;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.option {
+  text-align: center;
+  padding: 30px; /* Увеличено значение padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-grow: 1; /* Позволяет блоку занимать больше места */
+}
+
+.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.selected1 {
+  color: white;
+}
+
+
+.option a { /* Стили для ссылки */
+  display: block;
+  margin-top: 10px; 
+  text-decoration: none;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Выберите способ пожертвования:</h2>
+
+<div class="selected1 container ">
+  <div class="option" onclick="selectOption(this)">
+    <h3>Банковские реквизиты</h3>
+    <p>Монобанк</p>
+    <p>Получатель: Ігнатюк Іван</p>
+    <p>IBAN: UA833220010000026207343465553</p>
+  </div>
+
+  <div class="option selected" onclick="selectOption(this)"> 
+    <h3>Номер карты</h3>
+    <p>**** **** **** 1566</p>
+    <a href="https://send.monobank.ua/jar/7CFe6pQRNH" target="_blank">Перейти к оплате</a> 
+  </div>
+</div>
+
+<script>
+// ... (JavaScript код остается без изменений)
+</script>
+
+</body>
+</html>

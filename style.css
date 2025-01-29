@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #1a0525; /* Темно-фиолетовый фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+header {
+    background-image: url("idk1.jpg"); /* Путь к изображению */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #2b1055; /* Глубокий фиолетовый */
+    color: white;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header {
+    background-color: #190033; /* Очень темный фиолетовый */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ff66cc; /* Ярко-розовый */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: #3d0074; /* Глубокий фиолетово-синий */
+}
+
+.news article {
+    background-color: #29084d; /* Темно-фиолетовый */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Легкая тень */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+footer {
+    background-color: #190033; /* Очень темный фиолетовый */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
